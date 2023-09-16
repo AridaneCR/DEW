@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversacion</title>
+</head>
+<body>
+    <div>
+        <button id="elegir" onclick="elegirIdioma()">Elegir Idioma</button>
+    </div>
+
+    <button id="espanol" onclick="intercambiarMensajesESP()" style="display: none">
+        Español
+    </button>
+    <button id="ingles" onclick="intercambiarMensajesIngles()" style="display: none">
+        Inglés
+    </button>
+    <button id="ruso" onclick="intercambiarMensajesRuso()" style="display: none">
+        Ruso
+    </button>
+
+    <script>
+        function elegirIdioma() {
+            document.getElementById("elegir").style.display = "none";
+            document.getElementById("espanol").style.display = "block";
+            document.getElementById("ingles").style.display = "block";
+            document.getElementById("ruso").style.display = "block";
+        }
+
+        function intercambiarMensajesESP() {
+            let mensajeUsuario = prompt("Escribe tu mensaje:");
+            if (mensajeUsuario === null || mensajeUsuario === "") {
+                alert("No ingresaste un mensaje. La conversación ha terminado.");
+                return; // Corregido, era aje.return; en tu código original
+            }
+            alert("Usuario: " + mensajeUsuario);
+
+            alert("¡Hola!");
+        }
+
+        function intercambiarMensajesIngles() {
+            let mensajeUsuario = prompt("Type a message:");
+            if (mensajeUsuario === null || mensajeUsuario === "") {
+                alert("No ingresaste un mensaje. La conversación ha terminado.");
+                return;
+            }
+            alert("User says: " + mensajeUsuario);
+
+            alert("Hello");
+        }
+
+        function intercambiarMensajesRuso() {
+            let mensajeUsuario = prompt("Введите ваше сообщение:");
+            if (mensajeUsuario === null || mensajeUsuario === "") {
+                alert("No ingresaste un mensaje. La conversación ha terminado.");
+                return;
+            }
+            alert("Пользователь говорит: " + mensajeUsuario);
+
+            alert("Привет");
+        }
+    </script>
+</body>
+</html>
+

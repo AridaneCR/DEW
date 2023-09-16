@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+</head>
+
+
+<body>
+    
+    
+<h1>Realiza este Cuestiorario de verdadero o falso</h1>
+
+<div id="container">
+
+    <div >
+        <p id="1">¿Se encuentran los archivos HTML en los archivos locas del usuario?</p>
+        <button id="v1" onclick="cambiarFondo1('v')" >Verdadero</button>
+        <button id="f1" onclick="cambiarFondo1('f')">Falso</button>
+
+    </div>
+
+    <div>
+        <p id="2"> ¿Es el cliente quien presta un servicio?</p>
+        <button id="f2" onclick="cambiarFondo2('f')">Verdadero </button>
+        <button id="v2"" onclick="cambiarFondo2('v')">Falso</button>
+
+    </div>
+
+    <div >
+        <p id="3"> El back-end se dedica a la parte visual de la web</p>
+        <button id="f3" onclick="cambiarFondo3('f')"> Verdadero </button>
+        <button id="v3" onclick="cambiarFond3o('v')"> Falso </button>
+
+    </div>
+
+    <div>
+        <p id="4"> la optimizacion de recursos es una ventaja de utilizar framework </p>
+        <button id="v4" onclick="cambiarFondo4('v')"> Verdadero </button>
+        <button id="f4" onclick="cambiarFondo4('f')"> Falso </button>
+
+    </div>
+
+    <div >
+        <p id="5"> Una persona que maneje un framework puede incorporarse de manera efectiva y eficiente a un <br>
+            equipo de desarrollo que esté utilizando en un proyecto determinado</p>
+        <button id="v5" onclick="cambiarFondo5('v')"> Verdadero </button>
+        <button id="f5" onclick="cambiarFondo5('f')">Falso</button>
+
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+    var contador;
+
+function cambiarFondo1(r) {
+
+    var pregunta= document.getElementById("1") // Aquí deberías establecer tu condición
+   
+
+    if (r=='v') {
+       
+        pregunta.style.backgroundColor = 'green';
+         contador=+1
+    }
+     else if(r=='f'){
+        
+        pregunta.style.backgroundColor = 'red';
+
+    }
+    console.log(cambiarFondo1)
+}
+
+function cambiarFondo2(r) {
+
+var pregunta= document.getElementById("2") // Aquí deberías establecer tu condición
+
+
+if (r=='v') {
+   
+    pregunta.style.backgroundColor = 'green';
+     contador=+1
+}
+ else if(r=='f'){
+    
+    pregunta.style.backgroundColor = 'red';
+
+}
+}
+
+
+
+function cambiarFondo3(r) {
+
+var pregunta= document.getElementById("3") // Aquí deberías establecer tu condición
+
+
+if (r=='v') {
+   
+    pregunta.style.backgroundColor = 'green';
+     contador=+1
+}
+ else if(r=='f'){
+    
+    pregunta.style.backgroundColor = 'red';
+
+}
+console.log(cambiarFondo1)
+}
+
+
+
+function cambiarFondo4(r) {
+
+var pregunta= document.getElementById("4") // Aquí deberías establecer tu condición
+
+
+if (r=='v') {
+   
+    pregunta.style.backgroundColor = 'green';
+     contador=+1
+}
+ else if(r=='f'){
+    
+    pregunta.style.backgroundColor = 'red';
+
+}
+console.log(cambiarFondo1)
+}
+
+function cambiarFondo5(r) {
+
+var pregunta= document.getElementById("5") // Aquí deberías establecer tu condición
+
+
+if (r=='v') {
+   
+    pregunta.style.backgroundColor = 'green';
+     contador=+1
+}
+ else if(r=='f'){
+    
+    pregunta.style.backgroundColor = 'red';
+
+}
+console.log(cambiarFondo1)
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
